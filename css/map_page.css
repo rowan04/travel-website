@@ -3,3 +3,56 @@ div#osm-map {
     width: 75%;
     float: left;
 }
+
+div#add-marker {
+    margin-top: 295px;
+    width: 25%;
+    float: right;
+    text-align: center;
+}
+
+/* form styles */
+input[type=text] {
+    width: 20%;
+    margin-left: 5px;
+    margin-bottom: 20px;
+    border: 2px black;
+    border-radius: 3px;
+    background-color: lightgrey;
+    color: black;
+}
+
+label#latitude {
+    position: relative;
+    left: 5px;
+}
+
+input#latitude {
+    position: relative;
+    left: 5px;
+}
+
+label#markerName {
+    position: relative;
+    right: 12px;
+}
+
+input#markerName {
+    position: relative;
+    right: 12px;
+}
+
+input[type=submit] {
+    background-color: rgb(0, 115, 230);
+    color: white;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(0, 96, 192);
+}
