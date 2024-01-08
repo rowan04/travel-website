@@ -1,3 +1,4 @@
+/* sizing divs */
 div#main-text {
     width: 100%;
     text-align: center;
@@ -15,6 +16,7 @@ div#europe {
     text-align: center;
 }
 
+/* paragraph styling */
 p.thin {
     width: 400px;
     margin-left: auto;
@@ -27,12 +29,14 @@ p.wide {
     margin-right: auto;
 }
 
+/* header styling */
 h2 {
     color: rgb(0, 96, 192);
     font-family: Georgia;
     text-align: center;
 }
 
+/* image styling */
 .image {
     height: 400px;
     width: 400px;
@@ -40,6 +44,7 @@ h2 {
     margin-right: auto;
 }
 
+/* button styling */
 .button {
     background-color: rgb(0, 115, 230);
     color: white;

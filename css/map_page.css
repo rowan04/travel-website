@@ -1,9 +1,11 @@
+/* map size */
 div#osm-map {
     height:750px;
     width: 75%;
     float: left;
 }
 
+/* styling for add marker div */
 div#add-marker {
     margin-top: 295px;
     width: 25%;
@@ -11,17 +13,7 @@ div#add-marker {
     text-align: center;
 }
 
-/* form styles */
-input[type=text] {
-    width: 20%;
-    margin-left: 5px;
-    margin-bottom: 20px;
-    border: 2px black;
-    border-radius: 3px;
-    background-color: lightgrey;
-    color: black;
-}
-
+/* positioning marker form */
 label#latitude {
     position: relative;
     left: 5px;
@@ -40,6 +32,17 @@ label#markerName {
 input#markerName {
     position: relative;
     right: 12px;
+}
+
+/* form styles */
+input[type=text] {
+    width: 20%;
+    margin-left: 5px;
+    margin-bottom: 20px;
+    border: 2px black;
+    border-radius: 3px;
+    background-color: lightgrey;
+    color: black;
 }
 
 input[type=submit] {

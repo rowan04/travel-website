@@ -14,6 +14,7 @@
     </head>
 
     <body>
+        <!-- Create Navigation -->
         <nav>
             <ul class="navlist">
                 <li>
@@ -27,10 +28,14 @@
                 </li>
             </ul>
         </nav>
+
+        <!-- Create div to contain the map, then call the map function -->
         <div id="osm-map"></div>
         <script>createMap()</script>
 
+        <!-- Create div to contain the form which will allow markers to be added to the map -->
         <div id="add-marker">
+            <!-- On submit, call js function to process the form -->
             <form id="add-marker-form" class="add-marker-form" onsubmit="getMarkerInfo(this);return false">
                 <label for="latitude" id="latitude">Latitude:</label>
                 <input type="text" id="latitude" name="latitude" required>

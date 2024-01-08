@@ -1,3 +1,4 @@
+/* Styling for the gallery */
 div.gallery img {
     width: 100%;
     height: auto;
@@ -12,34 +13,40 @@ div.desc {
     box-sizing: border-box;
 }
 
+/* Set image size */
 .galleryImage {
     height: 500px;
     width: 500px;
 }
 
+/* Style responsive div */
+/* By default has 4 images in a row */
 .responsive {
     padding: 0 6px;
     float: left;
-    width: 24%;
+    width: 25%;
 }
 
+/* Styling for when screen gets too small */
 @media only screen and (max-width: 700px) {
+    /* Shrink to 2 images in a row */
     .responsive {
-        width: 49%;
+        width: 50%;
         margin: 6px 0;
         float: left;
     }
 }
 
 @media only screen and (max-width: 500px) {
+    /* Shrink to 1 image in a row */
     .responsive {
-        width: 99%;
+        width: 100%;
         float: left;
     }
-}
 
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
+    /* Shrink image when screen too small */
+    .galleryImage {
+        height: 350px;
+        width : 350px;
+    }
 }

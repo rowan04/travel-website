@@ -1,3 +1,4 @@
+/* navigation styling */
 .navlist li {
     padding: 6px 20px;
     border-left: 1px solid white;
@@ -34,6 +35,7 @@ a:hover {
     color: yellow;
 }
 
+/* general header styling */
 h1 {
     text-align: center;
     font-family: Georgia;
