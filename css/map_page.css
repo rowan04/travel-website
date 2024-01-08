@@ -1,0 +1,5 @@
+div#osm-map {
+    height:750px;
+    width: 75%;
+    float: left;
+}

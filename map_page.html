@@ -6,6 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Rowan's Travel Website</title>
         <link rel="stylesheet" href="css/standard.css" type="text/css">
+        <link rel="stylesheet" href="css/map_page.css" type="text/css">
+        <script src="js/map.js"></script>
+        <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css">
+        <h1>INTERACTIVE MAP</h1>
     </head>
 
     <body>
@@ -25,6 +30,19 @@
                 </li>
             </ul>
         </nav>
-        <p>Map page</p>
+        <div id="osm-map"></div>
+        <script>createMap()</script>
+
+        <div id="add-marker">
+            <form id="add-marker-form" class="add-marker-form" onsubmit="addMarker(this);return false">
+                <label for="latitude">Latitude:</label>
+                <input type="text" id="latitude" name="latitude" required>
+                <label for="longitude">Longitude:</label>
+                <input type="text" id="longitude" name="longitude" required>
+                <label for="markerName">Marker Name</label>
+                <input type="text" id="markerName" name="markerName" required>
+                <input type="submit" value="Add Marker">
+            </form>
+        </div>
     </body>
 </html>
